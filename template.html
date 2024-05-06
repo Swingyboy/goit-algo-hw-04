@@ -1,0 +1,38 @@
+<html>
+<head>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+        body {
+            padding: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            text-align: right;
+        }
+        table tr {
+            border-bottom: 1px solid;
+            font-size: 10px;
+        }
+        table th, table td {
+            padding: 10px 20px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Big(O) Report for sorting algorithms</h1>
+
+<p>The tests were executed for {{algorithms}} algorithms. Each test was performed for {{runs_number}} times.</p>
+<p>The array types are: {{array_types}}.</p>
+<p>Maximum array size was {{max_size}}, minimum size - {{min_size}} with step {{step}}.</p>
+<p>The table with average time of calculation for each algorithm per array size and array type:</p>
+
+{{ my_table }}
+<p>Time dependencies on array size for each algorithm and array type:</p>
+<img src='plot.svg' width="1200">
+
+</body>
+</html>
