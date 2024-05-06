@@ -24,15 +24,31 @@
 <body>
 
 <h1>Big(O) Report for sorting algorithms</h1>
-
+<h2>Summary</h2>
 <p>The tests were executed for {{algorithms}} algorithms. Each test was performed for {{runs_number}} times.</p>
 <p>The array types are: {{array_types}}.</p>
+<ul>
+    <li>Reversed - array with values sorted in descending order as the worst case</li>
+    <li>Sorted - array with values sorted in ascending order as the best case</li>
+    <li>Unsorted - array with values in random order as average case</li>
+</ul>
 <p>Maximum array size was {{max_size}}, minimum size - {{min_size}} with step {{step}}.</p>
+<p>The results are presented in the table below and on the plot.</p>
+<h2>Results</h2>
+<h3>Table with average time</h3>
 <p>The table with average time of calculation for each algorithm per array size and array type:</p>
-
 {{ my_table }}
+<h3>Plot</h3>
 <p>Time dependencies on array size for each algorithm and array type:</p>
 <img src='plot.svg' width="1200">
-
+<h3>Conclusion</h3>
+<p>Based on the results, the following conclusions can be made:</p>
+<ul>
+    <li>For a small array size, all algorithms show almost the same results.</li>
+    <li>For a big array size, the time of calculation increases significantly.</li>
+    <li>Algorithm {{best_algorithm}} is the fastest for Reversed and Unsorted array types for big array size.</li>
+    <li>Algorithm {{worst_algorithm}} is the slowest for Reversed and Unsorted array types for big array size.</li>
+    <li>For already sorted array type all algorithms show almost the same results</li>
+</ul>
 </body>
 </html>

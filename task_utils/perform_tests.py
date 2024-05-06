@@ -3,7 +3,7 @@ from threading import Thread
 import timeit
 from typing import Any, Callable, Dict, List, Union
 
-from sort_implementation import insertion_sort, merge_sort, tim_sort
+from task_utils.sort_implementation import insertion_sort, merge_sort, tim_sort
 
 
 def get_sort_time(sort_func: Callable, arr: List[Any]) -> float:

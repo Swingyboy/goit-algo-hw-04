@@ -1,7 +1,7 @@
 import argparse
 import pandas as pd
-from perform_tests import run_tests
-from report_generator import generate_html_report, save_html_report, open_html_report_in_browser
+from task_utils.perform_tests import run_tests
+from task_utils.report_generator import generate_html_report, save_html_report, open_html_report_in_browser
 
 
 def main(start: int = 1000, stop: int = 10001, step: int = 1000, runs_number: int = 3):
@@ -16,7 +16,6 @@ def main(start: int = 1000, stop: int = 10001, step: int = 1000, runs_number: in
                                         )
     save_html_report(html_content)
     open_html_report_in_browser()
-    print(result)
 
 
 if __name__ == "__main__":
